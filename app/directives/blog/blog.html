@@ -1,0 +1,21 @@
+<div>
+  <div class="page-header">
+    <div class="page-header__row">
+      <div class="page-header__col page-header__col--start">
+        <h2 class="page-header__title">Blog</h2>
+      </div>
+      <div class="page-header__col page-header__col--end">
+        <div class="page-header__options form">
+          <select name="languageSelect" ng-model="vm.lang" ng-change="vm.showPosts()">
+            <option value="both">Language</option>
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <post ng-repeat="post in vm.visibleBlogs track by $index" post="post"></post>
+  </div>
+</div>

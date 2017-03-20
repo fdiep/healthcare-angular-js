@@ -1,0 +1,46 @@
+//Default styles
+html {
+  box-sizing: border-box;
+  background: $mainbg;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: $primaryColor;
+}
+
+a {
+  color: $primaryColor;
+  text-decoration: none;
+
+  &:hover {
+    color: $primaryColor;
+  }
+}
+
+.inline-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline;
+  }
+}
+
+.content {
+  padding: 1rem 4rem;
+
+  &__title {
+    font-size: 1.5rem;
+  }
+}

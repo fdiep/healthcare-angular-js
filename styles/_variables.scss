@@ -1,0 +1,21 @@
+/*
+ * Variables
+ */
+// colors
+$white: #ffffff;
+$green: #18c27b;
+$gray: #dce0e8;
+$darkgray: darken($gray, 10%);
+$lightgray: lighten($gray, 5%);
+$mainbg: $white;
+$navbg: $lightgray;
+$pageHeaderbg: $gray;
+$primaryColor: #111;
+$primaryColorLight: lighten($primaryColor, 50%);
+
+// dimensions
+$navHeight: 50px;
+$pageHeaderHeight: 75px;
+$inputHeight: 40px;
+$inputWidth: 17rem;
+$selectWidth: 14rem;

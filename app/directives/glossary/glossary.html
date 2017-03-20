@@ -1,0 +1,26 @@
+<div>
+  <div class="page-header">
+    <div class="page-header__row">
+      <div class="page-header__col page-header__col--start">
+        <h2 class="page-header__title">Glossary</h2>
+      </div>
+    </div>
+    <div class="page-header__row">
+      <div class="page-header__col page-header__col--start">
+        <search-form on-search="vm.searchGlossary(term)" trigger-clear-search="vm.triggerClearSearch"></search-form>
+      </div>
+      <div class="page-header__col page-header__col--end">
+        <div class="page-header__options form">
+          <select name="languageSelect" ng-model="vm.lang" ng-change="vm.showGlossaries()">
+            <option value="both">Language</option>
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <glossary-item ng-repeat="glossary in vm.visibleGlossaries track by $index" glossary="glossary"></glossary-item>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+.nav {
+  display: flex;
+  height: $navHeight;
+  background: $navbg;
+  padding: 0 4rem 0 2rem;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    flex-grow: 1;
+    height: $navHeight;
+    font-size: 2.5rem;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 2;
+    flex-grow: 1;
+    height: $navHeight;
+    text-align: right;
+  }
+
+  &__list {
+    @extend .inline-list;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 0 0.5rem;
+    color: darken($navbg, 40%);
+
+    .nav__item:last-child & {
+      padding-right: 0;
+    }
+  }
+}

@@ -1,0 +1,100 @@
+.form {
+    input[type="text"],
+    input[type="email"] {
+        display: inline-block;
+        margin: 0;
+        padding: 0 0.5rem;
+        width: $inputWidth;
+        height: $inputHeight;
+        font-size: 1rem;
+        box-shadow: inset 1px 1px 3px 0px rgba(0,0,0,0.2);
+        border-radius: 0.286rem;
+        border: 1px solid darken($darkgray, 5%);
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    input[type="submit"] {
+        display: inline-block;
+        margin: 0;
+        padding: 0 0.5rem;
+        width: 8rem;
+        height: $inputHeight;
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: center;
+        box-shadow: none;
+        border-radius: 0.286rem;
+        border: 1px solid darken($darkgray, 5%);
+        outline: none;
+
+        background: $gray;
+        background-image: linear-gradient(to bottom, $gray, darken($gray, 20%));
+    }
+
+    textarea {
+        display: block;
+        margin: 0;
+        padding: 0.5rem 1rem;
+        width: $inputWidth * 2;
+        height: $inputHeight * 5;
+        font-size: 1rem;
+        box-shadow: inset 1px 1px 3px 0px rgba(0,0,0,0.2);
+        border-radius: 0.286rem;
+        border: 1px solid darken($darkgray, 5%);
+        resize: none;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    select {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        width: $selectWidth;
+        height: $inputHeight;
+        font-size: 1rem;
+        background: $lightgray;
+        background-image: linear-gradient(to bottom, $lightgray, darken($lightgray, 10%));
+        box-shadow: none;
+        border-radius: 0.286rem;
+        border: 1px solid darken($darkgray, 5%);
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &--large {
+        width: $inputWidth * 2;
+    }
+
+    &__row {
+        display: flex;
+        margin-bottom: 2rem;
+    }
+
+    &__col {
+        flex: 2;
+        flex-grow: 1;
+        text-align: right;
+
+        &:first-child {
+            flex: 1;
+            flex-grow: 2;
+            text-align: left;
+        }
+    }
+
+    &__validation-message {
+        font-size: 0.8rem;
+
+        &--success {
+            color: $green;
+        }
+    }
+}

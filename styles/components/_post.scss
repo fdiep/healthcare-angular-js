@@ -1,0 +1,39 @@
+.post {
+  margin-top: 2rem;
+
+  &__header {
+    display: flex;
+    margin-bottom: 0.25rem;
+  }
+
+  &__title {
+    flex: 1;
+    flex-grow: 5;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    font-size: 1.5rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__date {
+    flex: 1;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+    text-align: right;
+    font-size: 0.8rem;
+    color: $primaryColorLight;
+  }
+
+  &__categories {
+    padding-left: 1rem;
+    font-style: italic;
+    font-size: 0.8rem;
+    color: $primaryColorLight;
+  }
+}

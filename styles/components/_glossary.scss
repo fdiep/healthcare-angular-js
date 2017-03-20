@@ -1,0 +1,31 @@
+.glossary {
+  margin-top: 4rem;
+
+  glossary-item:first-child & {
+    margin-top: 2rem;
+  }
+
+  &__header {
+    display: flex;
+    margin-bottom: 0.25rem;
+  }
+
+  &__title {
+    flex: 1;
+    flex-grow: 5;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    font-size: 1.5rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__content {
+    h2 {
+      font-size: 1rem;
+    }
+  }
+}

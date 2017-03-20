@@ -1,0 +1,44 @@
+.page-header {
+  display: block;
+  padding: 0 4rem;
+  background: $darkgray;
+  border-top: 1px solid darken($darkgray, 5%);
+  // height: $pageHeaderHeight;
+
+  &__row {
+    display: flex;
+    height: $pageHeaderHeight;
+  }
+
+  &__col {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    flex-grow: 1;
+    height: $pageHeaderHeight;
+
+    &--start {
+      justify-content: flex-start;
+      flex-grow: 3;
+    }
+
+    &--end {
+      justify-content: flex-end;
+    }
+  }
+
+  &__title {
+    font-weight: normal;
+  }
+
+  &__options {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 2;
+    flex-grow: 1;
+    margin: 0;
+    font-weight: normal;
+    height: $pageHeaderHeight;
+  }
+}

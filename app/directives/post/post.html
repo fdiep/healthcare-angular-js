@@ -1,0 +1,10 @@
+<div class="post">
+  <div class="post__header">
+    <h3 class="post__title" ng-click="vm.navigateToPost()">{{vm.post.title}}</h3>
+    <p class="post__date">{{vm.post.date | formatDate}}</p>
+  </div>
+  <div class="post__categories">
+    in <span ng-repeat="cat in vm.post.categories track by $index">{{cat}}<span ng-if="!$last">, </span></span>
+  </div>
+  <p class="post__content">{{vm.post.content}}</p>
+</div>
